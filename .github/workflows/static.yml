@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta - Decisiones Financieras y Modelo Costo-Volumen-Utilidad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2, h3 {
+      color: #1e3a8a;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #334bce;
+    }
+    .pregunta {
+      background: #f9fafb;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Encuesta Universitaria</h1>
+    <p><strong>Tema:</strong> Decisiones financieras a corto plazo y aplicación del modelo Costo-Volumen-Utilidad</p>
+  </header>
+
+  <main>
+    <h2>Objetivo</h2>
+    <p>Identificar prácticas de planificación financiera y posibilidad de aplicación del modelo Costo-Volumen-Utilidad.</p>
+
+    <h3>Información General</h3>
+    <form id="formEncuesta">
+
+      <div class="pregunta">
+        <label>1. ¿A qué sector pertenece su empresa?</label>
+        <select name="sector">
+          <option>Comercio</option>
+          <option>Servicio</option>
+          <option>Producción</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>2. ¿Cuántos colaboradores tiene actualmente?</label>
+        <select name="colaboradores">
+          <option>1-5</option>
+          <option>6-10</option>
+          <option>11-20</option>
+          <option>Más de 20</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>3. ¿Su empresa cuenta con un área o responsable de contabilidad/finanzas?</label>
+        <select name="contabilidad">
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>4. ¿Utiliza algún sistema de contabilidad gerencial para el control interno?</label>
+        <select name="sistema">
+          <option>Sí</option>
+          <option>No</option>
+          <option>Parcialmente</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>5. ¿Es usted propietario del negocio?</label>
+        <select name="propietario">
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>6. ¿Qué métodos utiliza principalmente para el cálculo de costos?</label>
+        <select name="metodo">
+          <option>Órdenes</option>
+          <option>Procesos</option>
+          <option>No formal</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>7. ¿Con qué frecuencia realiza el cálculo de costos?</label>
+        <select name="frecuenciaCostos">
+          <option>Mensual</option>
+          <option>Trimestral</option>
+          <option>Semestral</option>
+          <option>Nunca</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>8. ¿La información de costos es útil para fijar precios de venta?</label>
+        <select name="utilidadCostos">
+          <option>Siempre</option>
+          <option>A veces</option>
+          <option>Nunca</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>9. ¿Su empresa elabora un presupuesto anual?</label>
+        <select name="presupuesto">
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>10. ¿Qué tipos de presupuestos elabora principalmente?</label>
+        <select name="tipoPresupuesto">
+          <option>Ingresos y gastos</option>
+          <option>Producción</option>
+          <option>Caja</option>
+          <option>Ninguno</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>11. ¿Con qué frecuencia revisa y ajusta el presupuesto?</label>
+        <select name="revisaPresupuesto">
+          <option>Mensual</option>
+          <option>Trimestral</option>
+          <option>Semestral</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>12. ¿Cuenta con proyecciones financieras para la toma de decisiones?</label>
+        <select name="proyecciones">
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>13. ¿Utiliza indicadores financieros?</label>
+        <select name="indicadores">
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>14. ¿Evalúa periódicamente la eficiencia operativa de los procesos?</label>
+        <select name="eficiencia">
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>15. ¿Qué herramienta utiliza para evaluar desempeño?</label>
+        <select name="herramienta">
+          <option>Estados financieros</option>
+          <option>KPI</option>
+          <option>Reportes internos</option>
+          <option>Ninguna</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>16. ¿Con qué frecuencia presenta informes de gestión a la gerencia?</label>
+        <select name="informes">
+          <option>Mensual</option>
+          <option>Trimestral</option>
+          <option>Semestral</option>
+          <option>Ninguno</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>17. ¿Considera que las decisiones financieras se toman bajo principios éticos?</label>
+        <select name="etica1">
+          <option>Siempre</option>
+          <option>A veces</option>
+          <option>Nunca</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>18. ¿Considera que las decisiones financieras se toman bajo principios éticos?</label>
+        <select name="etica2">
+          <option>Siempre</option>
+          <option>A veces</option>
+          <option>Nunca</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>19. ¿Se capacita al personal en ética financiera?</label>
+        <select name="capacitacion">
+          <option>Sí</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>20. ¿La información contable refleja la realidad financiera?</label>
+        <select name="realidad">
+          <option>Sí totalmente</option>
+          <option>Parcialmente</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>21. ¿La contabilidad gerencial le ha permitido tomar mejores decisiones?</label>
+        <select name="mejoresDecisiones">
+          <option>Sí</option>
+          <option>No</option>
+          <option>En parte</option>
+        </select>
+      </div>
+
+      <div class="pregunta">
+        <label>22. ¿Qué principal dificultad enfrenta al aplicar herramientas de contabilidad gerencial?</label>
+        <select name="dificultad">
+          <option>Falta de conocimiento</option>
+          <option>Falta de tiempo</option>
+          <option>Costos</option>
+          <option>No necesario</option>
+        </select>
+      </div>
+
+      <button type="button" onclick="guardarRespuestas()">Guardar respuestas</button>
+    </form>
+  </main>
+
+  <script>
+    function guardarRespuestas() {
+      const formData = new FormData(document.getElementById('formEncuesta'));
+      const respuestas = {};
+      for (let [key, value] of formData.entries()) {
+        respuestas[key] = value;
+      }
+      localStorage.setItem('respuestasEncuesta', JSON.stringify(respuestas));
+      alert('Respuestas guardadas correctamente 🎉');
+    }
+  </script>
+</body>
+</html>
